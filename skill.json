@@ -1,0 +1,33 @@
+{
+  "name": "genpark-loomal-mcp-billing-gateway-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Loomal-like billing gateway for MCP servers usage.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "mcp",
+    "billing",
+    "loomal"
+  ],
+  "inputs": {
+    "mcp_method": {
+      "type": "string"
+    },
+    "call_count": {
+      "type": "integer"
+    },
+    "cost_per_call": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "charged_amount_usd": {
+      "type": "number"
+    },
+    "access_authorized": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
